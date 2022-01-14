@@ -12,4 +12,9 @@ class TravelController extends Controller
         $travel_packages = TravelPackage::all();
         return view('welcome', compact('travel_packages'));
     }
+
+    public function about()
+    {
+        return view('about');
+    }
 }

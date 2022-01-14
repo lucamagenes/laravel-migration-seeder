@@ -2,7 +2,6 @@
 
 @section('content')
 
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">The Travelerz&copy;</a>
@@ -27,30 +26,26 @@
             </div>
         </div>
     </nav>
+
     <div class="container">
         <h1 class="my-5">
-            Travels
+            About Us
         </h1>
 
-        <div class="row g-4 mb-5">
-            @foreach ($travel_packages as $travel_package)
-
-                <div class="card col-6 text-center py-4">
-                    <h4>
-                        {{ $travel_package->name }}
-                    </h4>
-                    <p>
-                        {{ $travel_package->destination }}
-                    </p>
-                    <p>
-                        {{ $travel_package->date }}
-                    </p>
-                </div>
-
-            @endforeach
-        </div>
-
-
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cum architecto incidunt saepe beatae numquam
+            possimus atque error ipsum sed maxime corporis nisi, rerum pariatur, velit id delectus ipsam corrupti!
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cum architecto incidunt saepe beatae numquam
+            possimus atque error ipsum sed maxime corporis nisi, rerum pariatur, velit id delectus ipsam corrupti!
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa laboriosam iusto soluta quis id omnis, alias
+            corporis dolorem quos cupiditate ut? Numquam maxime repellat nulla reprehenderit nostrum architecto facilis,
+            esse reiciendis quisquam aperiam! Dolorem pariatur tempora perferendis esse dolorum eveniet possimus ab quo,
+            nobis natus consequatur soluta ullam tempore vero.
+        </p>
     </div>
 
 @endsection
