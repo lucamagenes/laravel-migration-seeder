@@ -15,7 +15,7 @@ class TravelController extends Controller
 
     public function show(TravelPackage $travel)
     {
-        //
+        return view('travels.show', compact('travel'));
     }
 
     public function about()

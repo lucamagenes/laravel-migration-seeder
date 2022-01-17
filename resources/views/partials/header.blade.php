@@ -1,7 +1,7 @@
 <header id="site_header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="/">The Travelerz&copy;</a>
+            <a class="navbar-brand" href="{{ route('welcome') }}">The Travelerz&copy;</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -10,13 +10,13 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/travels">Travels</a>
+                        <a class="nav-link" href="{{ route('travels') }}">Travels</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/blog">Blog</a>
+                        <a class="nav-link" href="{{ route('blogs') }}">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About us</a>
+                        <a class="nav-link" href="{{ route('aboutus') }}">About us</a>
                     </li>
                 </ul>
                 <form class="form-inline d-flex my-2 my-lg-0">

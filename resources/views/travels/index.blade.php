@@ -23,7 +23,8 @@
                         {{ $travel_package->date }}
                     </p>
 
-                    <a name="" id="" class="btn btn-primary w-25 m-auto" href="#" role="button">
+                    <a name="" id="" class="btn btn-primary w-25 m-auto"
+                        href="{{ route('travel', ['travel' => $travel->id]) }}" role="button">
                         Discover
                     </a>
 

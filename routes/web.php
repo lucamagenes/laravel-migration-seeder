@@ -20,7 +20,7 @@ Route::get('/', function(){
 Route::get('travels', 'TravelController@index')->name('travels');
 Route::get('travels/{travel}', 'TravelController@show')->name('travel');
 
-Route::get('blog', 'BlogController@index')->name('blog');
-Route::get('blog/{new}', 'BlogController@show')->name('blog');
+Route::get('blogs', 'BlogController@index')->name('blogs');
+Route::get('blogs/{blog}', 'BlogController@show')->name('blog');
 
 Route::get('/about', 'TravelController@about')->name('aboutus');
