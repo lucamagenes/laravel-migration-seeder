@@ -13,5 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'TravelController@index');
-Route::get('/about', 'TravelController@about');
+Route::get('/', function(){
+    return view('welcome');
+})->name('welcome');
+
+Route::get('travels', 'TravelController@index')->name('travels');
+Route::get('travels/{travel}', 'TravelController@show')->name('travel');
+
+Route::get('/about', 'TravelController@about')->name('aboutus');

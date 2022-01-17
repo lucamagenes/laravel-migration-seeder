@@ -10,7 +10,12 @@ class TravelController extends Controller
     public function index()
     {
         $travel_packages = TravelPackage::all();
-        return view('welcome', compact('travel_packages'));
+        return view('travels.index', compact('travel_packages'));
+    }
+
+    public function show(TravelPackage $travel)
+    {
+        //
     }
 
     public function about()
