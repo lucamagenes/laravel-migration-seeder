@@ -23,4 +23,4 @@ Route::get('travels/{travel}', 'TravelController@show')->name('travel');
 Route::get('blogs', 'BlogController@index')->name('blogs');
 Route::get('blogs/{blog}', 'BlogController@show')->name('blog');
 
-Route::get('/about', 'TravelController@about')->name('aboutus');
+Route::get('/about', 'AboutController@index')->name('aboutus');

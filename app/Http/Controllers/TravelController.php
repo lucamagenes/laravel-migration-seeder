@@ -17,9 +17,4 @@ class TravelController extends Controller
     {
         return view('travels.show', compact('travel'));
     }
-
-    public function about()
-    {
-        return view('about');
-    }
 }
