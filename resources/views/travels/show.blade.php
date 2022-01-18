@@ -7,13 +7,13 @@
     <div class="container">
 
         <h4>
-            {{ $travel_package->name }}
+            {{ $travel->name }}
         </h4>
         <p>
-            Destination: {{ $travel_package->destination }}
+            Destination: {{ $travel->destination }}
         </p>
         <p>
-            Travel date: {{ $travel_package->date }}
+            Travel date: {{ $travel->date }}
         </p>
 
     </div>

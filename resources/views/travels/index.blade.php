@@ -24,7 +24,7 @@
                     </p>
 
                     <a name="" id="" class="btn btn-primary w-25 m-auto"
-                        href="{{ route('travel', ['travel' => $travel->id]) }}" role="button">
+                        href="{{ route('travel', ['travel' => $travel_package->id]) }}" role="button">
                         Discover
                     </a>
 

@@ -18,11 +18,11 @@ class BlogSeeder extends Seeder
         for ($i=0; $i < 20; $i++) { 
             $_blog = new Blog();
             $_blog->image = $faker->imageUrl();
-            $_blog->title = $faker->title();
-            $_blog->sub_title = $faker->title();
+            $_blog->title = $faker->country();
+            $_blog->sub_title = $faker->text(30);
             $_blog->author = $faker->name();
-            $_blog->post_text = $faker->text(30);
-            $_blog->published = $faker->date(2021-01-17, 'now');
+            $_blog->post_text = $faker->paragraph(1);
+            $_blog->published = $faker->date('2021-01-17', 'now');
             $_blog->save();
         }
 
